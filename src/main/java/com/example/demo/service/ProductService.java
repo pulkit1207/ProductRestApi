@@ -27,7 +27,7 @@ public class ProductService {
 		}
 		else
 		{
-			return new Product();
+			return null;
 		}
 	}
 
@@ -42,8 +42,7 @@ public class ProductService {
 	}
 
 	public Product updateProduct(Product product) 
-	{
-		
+	{	
 		return productDao.save(product);
 	}
 
